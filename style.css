@@ -1,5 +1,6 @@
 body {
   background-color: #bee5cf;
+  width: 100vw;
 }
 
 h1 {
@@ -10,4 +11,19 @@ h1 {
 
 figcaption {
   font-family: "Josefin Sans", sans-serif;
+}
+
+figure {
+  margin: 0;
+  width: 600px;
+}
+
+div#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+img {
+  width: 100%;
 }
