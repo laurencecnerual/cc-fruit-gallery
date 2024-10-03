@@ -1,7 +1,7 @@
 body {
   background-color: #bee5cf;
   width: 95vw;
-  margin: 32px;
+  margin: 32px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +23,7 @@ figcaption {
   font-family: "Josefin Sans", sans-serif;
   background-color: rgba(0,0,0,0.4);
   color: white;
-  bottom: 32px;
+  bottom: 36px;
   position: relative;
   text-align: right;
   padding: 6px;
@@ -41,12 +41,14 @@ img {
 
 div#container {
   display: grid;
-  max-height: 80vh;
 }
 
 @media only screen and (min-width: 900px) {
+  body {
+    margin: 64px auto;
+  }
+
   div#container {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, minmax(0, 1fr));
     max-height: 80vh;
